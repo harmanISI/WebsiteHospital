@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	<title> AMANDEEP Hospital </title>
+	
+	<link href="css/style.css" type="text/css" rel="stylesheet">
+<script src="login.js"></script>
+</head>
+<body>
+	
+	<div class="top">
+		<div>
+			   Contact Us +91 9530768787 |e-mio hharman@isimontreal.com 
+		</div>
+	</div>
+	
+	<div class="logo">
+		<div>
+			<table>
+				<tr>
+					<td  style="font-size:40px;font-family:forte; width:600px;"> 
+						<p style="color:red;"> Amandeep <font color="#000"> Hospital</font> 
+						</p>
+					</td>
+					<td> 
+					 <form class="search">
+  <input type="text"  name="search" placeholder="Search..">
+</form> <br>
+						<font size="3px"> 
+							<a href="index.html">HOME</a> 
+							<a href="about.html">ABOUT US</a>  
+							<a href="service.html">SERVICE</a>
+							<a href="doctor.html">DOCTORS</a> 
+							<a href="">PORTAL OPD</a> 
+							<a href="contact.html">CONTACT US</a>
+						</font>
+					</td>
+				</tr>
+			</table>
+		</div>
+	</div>
+		<div class="bottom">
+		<div>
+			<!-- <font color="#000" size="5px">
+			 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;WELECOME OUR PROUD THE covidwarriors 
+					 </font> -->
+			<table  class="f1">
+				
+					
+
+    
+ <div class="container">
+ 	    <form action="" method="post" name="myform">
+<!--  		 login type
+  <input type="radio" id="male" name="gender" value="male">
+  <label for="male">Male</label>
+  <input type="radio" id="female" name="gender" value="female">
+  <label for="female">Female</label> -->
+  
+ 	<tr><td>
+ 		<label for="typeofuser" style="margin-top: 24px;"><b>User Type</b></label>
+ 		 <input type="radio" id="Patient" name="usertype" value="Patient" style="margin-left:15px;">
+		  <label for="Patient">Patient</label>
+		  <input type="radio" id="doctor" name="usertype" value="doctor" style="margin-left: 13px;">
+		  <label for="Doctor">Doctor</label>
+ 	</td></tr>
+  	<tr ><td>
+    <label for="uname" style="margin-top: 10px;"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="userid" required style="margin-left:15px;margin-top: 10px;">
+</td></tr>
+<tr >
+<td>
+    <label for="psw" style="margin-top: 10px;"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="pswrd" required style="margin-left:22px;margin-top: 10px;" >
+</td></tr>
+</tr>
+</table>
+</div>
+<table >
+			<tr>
+	<td>
+    <button type="submit"  class="smbbtn" value="Login" onclick="check(this.form)" style="width: 60px;  margin-bottom: 60px; font-size: 14px;    margin-left: 100px;
+    border-radius: 6px; padding: 8px;border-color: #2FA5EB;">Login
+    </button>  
+   <button type="reset" class="cancelbtn" style="width: 60px;margin-bottom: 60px; font-size: 14px;
+    border-radius: 6px; padding: 8px;border-color: #2FA5EB;" >Cancel</button>  </td>
+
+     </div>
+  </div> 
+</div>
+</tr>
+</table>
+</form>					  			
+</td>
+</tr>
+</table>
+
+
+
+
+
+
+
+	<footer>
+		<div class="nav_upper">
+			<div class="left">
+				<h4 class="title">Our Network</h4>
+				<p class="footer-p">Amandeep Hospital Brampton</p>
+
+								<p class="footer-p">Amandeep Medicity Montreal</p>
+								<p class="footer-p">Amandeep OPD Clinic Ferozepur</p>
+								<p class="footer-p">Amandeep OPD Clinic Jalandhar</p>
+
+								<p class="footer-p">Amandeep OPD Clinic Jammu</p>
+								<br>
+
+			</div>
+			<div class="middlediv">
+				<h4 class="title">Our Specialty</h4>
+				<p class="footer-p">&#xB7;Orthopaedics & Joint Replacement </p>
+
+
+
+								<p class="footer-p"> &#xB7;Robotic Knee Replacement </p>
+								<p class="footer-p"> &#xB7;Neuro & Spine Surgery</p>
+								<p class="footer-p">&#xB7;Plastic Reconstructive & Aesthetic Surgery </p>
+								<p class="footer-p">&#xB7;Cardiology & Cardiothoracic Surgery
+ </p>
+								<p class="footer-p">&#xB7;Gastroenterology</p>
+			</div>
+			<div class="right">
+				<h4 class="title">Social updates</h4>
+				<img src="img/fb.png" alt="Instagram" width="360" height="280">
+			</div>
+		</div>
+		<div class="">
+			<div class="divblack" style="width:105%; float: left;">
+			 	<p> &copy; Amandeep Hospital, site designed & developed by HARMAN ISI GROUP  
+		 &nbsp; follow us on-<a href="https://touch.facebook.com/">
+
+				<img src="img/f.jpeg" alt="alternatetext"  width="40" height="30">
+							</a>
+
+							|<a href="https://www.instagram.com/accounts/login">
+
+				   <img src="img/i.png" alt="alternatetext"  width="40" height="30">
+			
+		</div>
+	</footer>
+
+
+
+
+
+
+
+
+
+
+	
+<script language="javascript">
+	var attempt = 3;
+function check(form)
+    {
+ if(form.userid.value == "doctor" && form.pswrd.value == "123" || form.userid.value == "pat" && form.pswrd.value == "123")
+  {
+    window.open('index.html')
+  }
+ else
+ {
+ 	attempt --;
+ 	
+   alert("your user name or password is wrong. You have left "+attempt+" attempt;")
+  }
+}
+</script>
